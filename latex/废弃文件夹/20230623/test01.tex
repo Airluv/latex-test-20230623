@@ -1,0 +1,76 @@
+
+%文档基本结构
+\documentclass{article}
+
+\title{First Tex File}
+\author{Andy}
+\date{\today}
+
+\usepackage{ctex}
+\usepackage{amsmath}
+%正文区
+\begin{document}
+	\maketitle%使得导言区的设置生效
+	
+	\section{行内公式}
+	\subsection{美元符号}
+	交换律$a+b=b+a$，如$1+2=2+1$
+	\subsection{小括号}
+	交换律\(a+b=b+a\),如\(1+2=2+1\)
+	\subsection{math环境}
+	交换律\begin{math}
+		a+b=b+a
+	\end{math}
+	\section{上下标}
+	\subsection{上标}
+	$2x^2+3x+5=6$
+	\subsection{下标}
+	$a_0,a_1,a_{100}$
+	\section{希腊字母}
+	$\alpha$
+	$\beta$
+	$\gamma$
+	$\epsilon$
+	$\pi$
+	$\omega$
+	
+	$\Gamma$
+	$\Delta$
+	$\Theta$
+	$\Pi$
+	$\Omega$
+	\section{数学函数}
+	$\log$
+	$\sin$
+	$\cos$
+	$\arccos$
+	$\arcsin$
+	$\ln$
+	
+	$\sin^2x+\cos^2x=1$
+	
+	$\sqrt{2}$
+	$\sqrt{x^2+y^2}$
+	$\sqrt{2+\sqrt{2}}$
+	$\sqrt[4]{x}$
+	\section{分式}
+	大约是原体积的$3/4$
+	大约是原体积的$\frac{3}{4}$
+	\section{行间公式}
+	\subsection{$$$$}
+	        $$2x^2+5x+3=6$$	
+	\subsection{displayment}
+	\begin{displaymath}
+		2x^2+5x+3=6	
+	\end{displaymath}
+	\subsection{自动编号公式}
+	交换律见式\ref{eq:commutative}
+	\begin{equation}
+		a+b=b+a \label{eq:commutative}
+	\end{equation}
+    \subsection{不带自动编号公式}
+    \begin{equation*}%需要使用\usepackage{amsmath}
+    	a+b=b+a
+    \end{equation*}
+	
+\end{document}
